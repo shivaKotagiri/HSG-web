@@ -32,11 +32,14 @@ export default function RegisterPage() {
 
   const [error, setError] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { id, value, type, checked } = e.target;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const target = e.target as HTMLInputElement | HTMLSelectElement;
+    const id = target.id;
+    const isCheckbox = (target as HTMLInputElement).type === "checkbox";
+    const nextValue = isCheckbox ? (target as HTMLInputElement).checked : target.value;
     setFormData((prev) => ({
       ...prev,
-      [id]: type === "checkbox" ? checked : value,
+      [id]: nextValue,
     }));
   };
 
@@ -92,17 +95,12 @@ export default function RegisterPage() {
             <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-indigo-600/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
 
-        {/* Brand Header */}
-        <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-10 w-10 bg-white/10 backdrop-blur-md rounded-lg flex items-center justify-center border border-white/10 shadow-inner shadow-white/10">
-              <Command size={20} className="text-white" />
-            </div>
-            <span className="font-bold tracking-[0.2em] text-xs uppercase text-zinc-400">Unit Registration</span>
-          </div>
-          <h1 className="text-5xl font-black tracking-tighter leading-[1.1]">
+        <div className="relative z-10 flex flex-col leading-none">
+          <span className="text-3xl font-black tracking-tight">CMRIT HSG</span>
+          <span className="text-xs uppercase tracking-[0.2em] text-zinc-400 mt-1">Portal Registration</span>
+          <h1 className="mt-6 text-5xl font-black tracking-tighter leading-[1.1]">
             Join the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Movement.</span>
+            Movement.
           </h1>
         </div>
 
@@ -128,10 +126,9 @@ export default function RegisterPage() {
         
         <div className="w-full max-w-2xl px-6 py-12 lg:px-16 lg:py-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
           
-          {/* Mobile Brand (Visible only on small screens) */}
           <div className="lg:hidden flex items-center gap-2 mb-8 text-zinc-900">
              <div className="h-8 w-8 bg-zinc-900 rounded flex items-center justify-center text-white"><Command size={16}/></div>
-             <span className="font-bold">HSG CMRIT</span>
+             <span className="font-bold">CMRIT HSG</span>
           </div>
 
           {/* Back Navigation */}
@@ -170,10 +167,36 @@ export default function RegisterPage() {
                   id="age" type="number" label="Age" icon={<Calendar size={18} />} 
                   placeholder="18" value={formData.age} onChange={handleChange} 
                 />
-                 <InputGroup 
-                  id="bloodGroup" label="Blood Group" icon={<Droplet size={18} />} 
-                  placeholder="O+" value={formData.bloodGroup} onChange={handleChange} 
-                />
+                 <div className="group relative w-full">
+                   <label 
+                     htmlFor="bloodGroup" 
+                     className="block text-xs font-bold uppercase tracking-wider text-zinc-500 mb-2 group-focus-within:text-blue-600 transition-colors"
+                   >
+                     Blood Group
+                   </label>
+                   <div className="relative flex items-center">
+                     <div className="absolute left-0 text-zinc-400 group-focus-within:text-blue-600 transition-colors pointer-events-none">
+                       <Droplet size={18} />
+                     </div>
+                     <select
+                       id="bloodGroup"
+                       className="w-full bg-transparent border-b-2 border-zinc-200 py-3 pl-8 text-zinc-900 focus:outline-none focus:border-blue-600 transition-all font-medium"
+                       value={formData.bloodGroup}
+                       onChange={handleChange}
+                       required
+                     >
+                       <option value="" disabled>Select</option>
+                       <option value="A+">A+</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B-">B-</option>
+                       <option value="O+">O+</option>
+                       <option value="O-">O-</option>
+                       <option value="AB+">AB+</option>
+                       <option value="AB-">AB-</option>
+                     </select>
+                   </div>
+                 </div>
               </div>
             </div>
 
