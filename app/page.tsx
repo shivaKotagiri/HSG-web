@@ -4,71 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { 
-  Menu, X, ArrowRight, Heart, Users, 
-  Target, Shield, Zap, MapPin, Mail, Phone, ChevronRight,
-  LogIn, Eye, Flag, 
-  Footprints, Compass, MountainSnow, ShieldCheck, Crown, 
-  HeartPulse, Search, Globe, Terminal, 
-  Sparkles, Briefcase, GraduationCap, Ticket, 
-  Landmark, Trophy, Facebook, Instagram, Twitter, Linkedin,
-  Hand // <--- Added Hand icon
+  Menu, X, Mail, Phone,
+  LogIn, Footprints, Compass, MountainSnow, ShieldCheck, Crown, 
+  HeartPulse, Briefcase, GraduationCap, Ticket, 
+  Landmark, Trophy, ChevronLeft, ChevronRight,
 } from "lucide-react";
 
-// --- Helper Component for the About Section ---
-const InfoCard = ({ title, subTitle, content, icon: Icon }: { title: string, subTitle?: string, content: string, icon: any }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  
-  // Logic to determine if text should be truncated
-  const limit = 150;
-  const shouldTruncate = content.length > limit;
-  const displayContent = isExpanded || !shouldTruncate ? content : content.slice(0, limit) + "...";
-
-  return (
-    <div className="relative group h-full">
-      {/* Card Background & Hover Effect */}
-      <div className="h-full bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-900/5 hover:-translate-y-2 relative overflow-hidden z-10 flex flex-col">
-        
-        {/* Decorative Gradient Blob on Hover */}
-        <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl"></div>
-
-        {/* Icon & Title */}
-        <div className="relative z-10 mb-6">
-          <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-zinc-50 border border-zinc-100 text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 shadow-sm">
-             <Icon size={28} strokeWidth={1.5} />
-          </div>
-          <h3 className="text-3xl font-serif font-bold text-zinc-900 mb-2 tracking-tight">
-            {title}
-          </h3>
-          {subTitle && (
-            <div className="inline-block px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest mb-2 border border-blue-100">
-              {subTitle}
-            </div>
-          )}
-        </div>
-
-        {/* Text Content */}
-        <div className="relative z-10 flex-grow">
-          <p className="text-zinc-600 leading-relaxed text-base font-light">
-            {displayContent}
-          </p>
-        </div>
-
-        {/* Read More Toggle */}
-        {shouldTruncate && (
-          <button 
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="relative z-10 mt-8 text-sm font-bold text-blue-600 hover:text-blue-800 flex items-center gap-2 transition-colors self-start focus:outline-none group/btn"
-          >
-            {isExpanded ? "Read less" : "Read full description"}
-            <ArrowRight size={16} className={`transition-transform duration-300 ${isExpanded ? "-rotate-90" : "group-hover/btn:translate-x-1"}`} />
-          </button>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// --- Mock Data ---
 const NAV_LINKS = [
   { name: "History", href: "#history" },
   { name: "About", href: "#about" },
@@ -93,15 +34,11 @@ export default function Home() {
   useEffect(() => {
     const t = setInterval(() => setHeroIndex((i) => (i + 1) % heroImages.length), 5000);
     return () => clearInterval(t);
-  }, []);
+  }, [heroImages.length]);
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-blue-100">
-      
-      {/* --- 1. Dual Header / Navigation --- */}
       <div className="sticky top-0 z-50 w-full">
-        
-        {/* Top Utility Bar */}
         <div className="bg-zinc-900 text-zinc-400 text-xs py-2 px-6 hidden md:block">
           <div className="mx-auto max-w-7xl flex justify-between items-center">
             <div className="flex items-center gap-6">
@@ -113,12 +50,6 @@ export default function Home() {
                </span>
             </div>
             <div className="flex items-center gap-4">
-               <div className="flex gap-3 pr-4 border-r border-zinc-700">
-                  <Facebook size={14} className="hover:text-blue-500 cursor-pointer transition-colors" />
-                  <Twitter size={14} className="hover:text-sky-400 cursor-pointer transition-colors" />
-                  <Instagram size={14} className="hover:text-pink-500 cursor-pointer transition-colors" />
-                  <Linkedin size={14} className="hover:text-blue-700 cursor-pointer transition-colors" />
-               </div>
                <Link 
                  href="/login" 
                  className="flex items-center gap-2 rounded-none bg-blue-600 px-3 py-1 text-white font-semibold shadow-sm hover:bg-blue-700 transition-colors"
@@ -128,14 +59,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Main Navigation Bar */}
         <header className="border-b border-zinc-200 bg-white shadow-sm">
           <div className="mx-auto flex h-20 md:h-24 max-w-7xl items-center justify-between px-6 lg:px-8">
-            
-            {/* Left: Brand Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-               {/* HSG Logo */}
                <div className="relative h-20 w-20 md:h-24 md:w-24 shrink-0">
                   <Image 
                     src="https://res.cloudinary.com/dq2suftps/image/upload/v1722516854/logo_bivaq2.jpg" 
@@ -145,16 +71,12 @@ export default function Home() {
                  />
                </div>
 
-               {/* Brand Text (Hidden on small mobile) */}
                <div className="hidden sm:flex flex-col leading-tight ml-2">
                  <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest group-hover:text-blue-600 transition-colors">CMRIT Chapter</span>
                  <span className="text-sm md:text-lg font-bold text-zinc-900 tracking-tight">Hindustan Scouts & Guides Association</span>
                </div>
             </Link>
 
-            {/* Center: Desktop Nav (moved to secondary navbar below) */}
-
-            {/* Right: CTA */}
             <div className="hidden md:flex items-center gap-4">
                <Link 
                  href="/register" 
@@ -164,7 +86,6 @@ export default function Home() {
                </Link>
             </div>
 
-            {/* Mobile Menu Toggle */}
             <button 
               className="xl:hidden p-2 text-zinc-600 hover:bg-zinc-100 rounded-md"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -173,7 +94,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Mobile Nav Dropdown (Menu items only) */}
           {isMobileMenuOpen && (
             <div className="xl:hidden border-t border-zinc-200 bg-white px-6 py-6 space-y-4 shadow-xl max-h-[80vh] overflow-y-auto">
               <div className="flex flex-col space-y-2">
@@ -193,10 +113,9 @@ export default function Home() {
         </header>
       </div>
       
-      {/* Secondary Menu Navbar */}
-      <div className="sticky top-[64px] md:top-[80px] z-40 w-full border-y border-zinc-200 bg-zinc-50 backdrop-blur-sm shadow-sm">
+      <div className="sticky top-16 md:top-20 z-40 w-full border-y border-zinc-200 bg-zinc-50 backdrop-blur-sm shadow-sm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="h-px bg-gradient-to-r from-blue-200 via-zinc-200 to-transparent"></div>
+          <div className="h-px bg-linear-to-r from-blue-200 via-zinc-200 to-transparent"></div>
           <nav className="hidden xl:flex items-center gap-1 py-2">
             {NAV_LINKS.map((link) => (
               <Link
@@ -210,57 +129,67 @@ export default function Home() {
           </nav>
         </div>
       </div>
+{/* hero section */}
+      <section className="relative w-full bg-black group">
 
-     {/* --- 2. Hero Section --- */}
-      <section className="relative w-full min-h-[70svh] md:min-h-[520px] bg-black">
-        <div className="relative h-[70svh] md:h-[520px] overflow-hidden">
+        <div className="relative w-full h-62.5 sm:h-100 md:h-137.5 lg:h-162.5 overflow-hidden">
+          
           <div
-            className="flex h-full w-full transition-transform duration-700"
+            className="flex h-full w-full transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${heroIndex * 100}%)` }}
           >
             {heroImages.map((src, i) => (
               <div key={i} className="relative min-w-full h-full">
-                <Image 
-                  src={src} 
-                  alt={`Banner ${i + 1}`} 
-                  fill 
-                  className="object-cover object-center" 
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                  quality={90}
+                <Image
+                  src={src}
+                  alt={`Banner ${i + 1}`}
+                  fill
+                  className="object-cover object-center"
+                  sizes="100vw"
                   priority={i === 0}
+                  quality={90}
                 />
+                {/* Subtle gradient to ensure white navigation arrows are always visible */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
               </div>
             ))}
           </div>
-          <div className="absolute inset-y-0 left-0 flex items-center">
-            <button
-              className="m-4 bg-white/20 hover:bg-white/40 text-white px-3 py-2"
-              onClick={() => setHeroIndex((i) => (i - 1 + heroImages.length) % heroImages.length)}
-            >
-              Prev
-            </button>
-          </div>
-          <div className="absolute inset-y-0 right-0 flex items-center">
-            <button
-              className="m-4 bg-white/20 hover:bg-white/40 text-white px-3 py-2"
-              onClick={() => setHeroIndex((i) => (i + 1) % heroImages.length)}
-            >
-              Next
-            </button>
-          </div>
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+
+          {/* Navigation Arrows - Smaller & Subtle on Mobile */}
+          <button
+            className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 md:p-3 rounded-full bg-black/20 text-white backdrop-blur-sm hover:bg-black/40 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0"
+            onClick={() => setHeroIndex((i) => (i - 1 + heroImages.length) % heroImages.length)}
+            aria-label="Previous Slide"
+          >
+            <ChevronLeft className="w-5 h-5 md:w-8 md:h-8" />
+          </button>
+
+          <button
+            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 md:p-3 rounded-full bg-black/20 text-white backdrop-blur-sm hover:bg-black/40 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0"
+            onClick={() => setHeroIndex((i) => (i + 1) % heroImages.length)}
+            aria-label="Next Slide"
+          >
+            <ChevronRight className="w-5 h-5 md:w-8 md:h-8" />
+          </button>
+
+          {/* Pagination Dots */}
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-2 z-10">
             {heroImages.map((_, i) => (
               <button
                 key={i}
-                className={`w-2.5 h-2.5 ${heroIndex === i ? "bg-white" : "bg-white/40"}`}
+                className={`h-1 md:h-1.5 rounded-full transition-all duration-300 ${
+                  heroIndex === i 
+                    ? "w-4 md:w-8 bg-white" 
+                    : "w-1 md:w-1.5 bg-white/50 hover:bg-white/80"
+                }`}
                 onClick={() => setHeroIndex(i)}
+                aria-label={`Go to slide ${i + 1}`}
               />
             ))}
           </div>
         </div>
       </section>
 
-      {/* --- 3. History Section --- */}
       <section id="history" className="w-full py-20 bg-zinc-50 border-b border-zinc-200 relative">
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="w-full mb-12 flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-300 pb-6">
@@ -274,11 +203,11 @@ export default function Home() {
               </h2>
             </div>
             <p className="md:max-w-md text-right text-zinc-500 mt-4 md:mt-0 italic font-serif">
-              "From the battlefields of 1857 to a global movement."
+              &quot;From the battlefields of 1857 to a global movement.&quot;
             </p>
           </div>
           
-          <div className={historyExpanded ? "" : "relative max-h-[520px] md:max-h-[600px] overflow-hidden"}>
+          <div className={historyExpanded ? "" : "relative max-h-130 md:max-h-150 overflow-hidden"}>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-16 text-zinc-700 text-sm leading-relaxed text-justify">
               <div className="space-y-4 relative">
                  <p>
@@ -287,20 +216,20 @@ export default function Home() {
                  <p>
                    <strong className="text-blue-600">Scouting History in the World:</strong> Robert began coined the word <span className="text-blue-600 font-semibold">Scouting</span> under influenced from Indian Culture and Indian ancient system of education. The syllabus and teaching topics covered in this, actually were very much inherited in the culture of Indian Civilisation. Even the saying goes that Beden Powel got this idea by understanding teaching pattern adopted by Hindu <span className="text-blue-600 font-semibold">Gurukul</span>. He was also inspired by childhood teaching activities of Lord Shri Ram Chandra and Shri Laxman as depicted in Ramayana and added a Jungle Visit in syllabus. With the life of Balak Shri Krishana he remained astonished to know that the audacious in adolescent age.
                  </p>
-                 <div className="hidden lg:block absolute right-[-2rem] top-0 bottom-0 w-px bg-zinc-200"></div>
+                 <div className="hidden lg:block absolute -right-8 top-0 bottom-0 w-px bg-zinc-200"></div>
               </div>
               <div className="space-y-4 relative">
                  <p>
                    <strong className="text-blue-600">Origin:</strong> <span className="text-blue-600 font-semibold">Scouting</span> is stated as aim of supporting young people in their physical, mental and spiritual development, that they may play constructive roles in society. During the first half of the 20th century, the movement grew to encompass three major age groups each for boys (Cub Scout, Boy Scout, Rover Scout) and, in 1910, a new organization, Girl Guides, was created for girls (Brownie Guide, Girl Guide and Girl Scout, Ranger Guide).
                  </p>
                  <p>
-                   As a military officer, Robert Baden-Powell was stationed in British India and Africa in the 1880s and 1890s. Since his youth, in military scouting and as part of their training—he showed his men how to survive in the wilderness. He noticed that it helped the soldiers to develop independence rather than just blindly follow officers' orders. In 1896, Baden-Powell was assigned to the Matabeleland region in Southern Rhodesia (now Zimbabwe) as Chief of Staff to Gen. Frederick Carrington during the Second Matabele War, and it was here that he first met and began a lifelong friendship with Frederick Russell Burnham, the American born Chief of Scouts for the British.
+                   As a military officer, Robert Baden-Powell was stationed in British India and Africa in the 1880s and 1890s. Since his youth, in military scouting and as part of their training—he showed his men how to survive in the wilderness. He noticed that it helped the soldiers to develop independence rather than just blindly follow officers&apos; orders. In 1896, Baden-Powell was assigned to the Matabeleland region in Southern Rhodesia (now Zimbabwe) as Chief of Staff to Gen. Frederick Carrington during the Second Matabele War, and it was here that he first met and began a lifelong friendship with Frederick Russell Burnham, the American born Chief of Scouts for the British.
                  </p>
-                 <div className="hidden lg:block absolute right-[-2rem] top-0 bottom-0 w-px bg-zinc-200"></div>
+                 <div className="hidden lg:block absolute -right-8 top-0 bottom-0 w-px bg-zinc-200"></div>
               </div>
               <div className="space-y-4">
                  <p>
-                   The need for the improved training of British military-enlisted scouts, particularly in initiative, self-reliance, and observational skills. Each member received a badge that illustrated a combined compass point and spearhead. The badge's logo was similar to the fleur-de-lis that scouting later adopted as its international symbol. In the United Kingdom, the public followed Powell's struggle to hold Mafeking through newspapers, and when the siege was broken, he had become a national hero.
+                   The need for the improved training of British military-enlisted scouts, particularly in initiative, self-reliance, and observational skills. Each member received a badge that illustrated a combined compass point and spearhead. The badge&apos;s logo was similar to the fleur-de-lis that scouting later adopted as its international symbol. In the United Kingdom, the public followed Powell&apos;s struggle to hold Mafeking through newspapers, and when the siege was broken, he had become a national hero.
                  </p>
                  <p>
                    <strong className="text-blue-600">Scouting in India:</strong> Although, <span className="text-blue-600 font-semibold">Scouting</span> came in India solitary for European and Anglo Indian boys and girls under the banner of English by the name of Boys Scouts of India in 1909 and same with Girl Guiding in 1913. However, Powel kept closed scouting doors for Indians. There was resentment in Indians for it and 1921, when World Chief Scout Lord Baden Powell came to India, under the Leadership of Pt. Madan Mohan Malviya, a Great Leader of India, Baden Powell was requested to open the doors for Indians but he refused brutally.
@@ -309,7 +238,7 @@ export default function Home() {
             </div>
             
             {!historyExpanded && (
-              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-end justify-center pb-4">
+              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white to-transparent flex items-end justify-center pb-4">
                 <button
                   onClick={() => setHistoryExpanded(true)}
                   className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-6 py-3 text-sm font-bold hover:bg-blue-700 transition-colors"
@@ -360,7 +289,7 @@ export default function Home() {
               <p>
                 Our activities combine physical endurance, outdoor skills, teamwork, and social responsibility. Students participate in camps, disaster management training, first aid, and community service initiatives that cultivate confidence, empathy, and resilience.
               </p>
-              <div className="hidden lg:block absolute right-[-2rem] top-0 bottom-0 w-px bg-zinc-200"></div>
+              <div className="hidden lg:block absolute -right-8 top-0 bottom-0 w-px bg-zinc-200"></div>
             </div>
 
             <div className="space-y-4 relative">
@@ -371,7 +300,7 @@ export default function Home() {
               <p>
                 <span className="text-blue-600 font-semibold">Vision:</span> To empower youth across diverse backgrounds through structured programs that develop physical, mental, and moral strength. We collaborate with institutions and associations to broaden access and opportunities for growth.
               </p>
-              <div className="hidden lg:block absolute right-[-2rem] top-0 bottom-0 w-px bg-zinc-200"></div>
+              <div className="hidden lg:block absolute -right-8 top-0 bottom-0 w-px bg-zinc-200"></div>
             </div>
 
             <div className="space-y-4">
@@ -388,11 +317,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- 6. Levels of Achievement (Clean Cards) --- */}
       <section id="levels" className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           
-          {/* Header */}
           <div className="w-full mb-12 flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-300 pb-6">
             <div>
               <div className="inline-flex items-center gap-2 text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">
@@ -404,14 +331,14 @@ export default function Home() {
               </h2>
             </div>
             <p className="md:max-w-md text-right text-zinc-500 mt-4 md:mt-0 italic font-serif">
-              "From entry to excellence — earn, lead, inspire."
+              &quot;From entry to excellence — earn, lead, inspire.&quot;
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-teal-500/40 via-teal-400/30 to-transparent group-hover:from-teal-500 group-hover:via-teal-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-teal-500/40 via-teal-400/30 to-transparent group-hover:from-teal-500 group-hover:via-teal-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-50 text-teal-600 ring-1 ring-teal-100 group-hover:bg-teal-600 group-hover:text-white transition-colors">
                 <Footprints size={24} />
               </div>
@@ -425,7 +352,7 @@ export default function Home() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500/40 via-indigo-400/30 to-transparent group-hover:from-indigo-500 group-hover:via-indigo-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-indigo-500/40 via-indigo-400/30 to-transparent group-hover:from-indigo-500 group-hover:via-indigo-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 ring-1 ring-indigo-100 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 <Compass size={24} />
               </div>
@@ -439,7 +366,7 @@ export default function Home() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-sky-500/40 via-sky-400/30 to-transparent group-hover:from-sky-500 group-hover:via-sky-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-sky-500/40 via-sky-400/30 to-transparent group-hover:from-sky-500 group-hover:via-sky-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-50 text-sky-600 ring-1 ring-sky-100 group-hover:bg-sky-600 group-hover:text-white transition-colors">
                 <MountainSnow size={24} />
               </div>
@@ -453,7 +380,7 @@ export default function Home() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-500/40 via-amber-400/30 to-transparent group-hover:from-amber-500 group-hover:via-amber-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-amber-500/40 via-amber-400/30 to-transparent group-hover:from-amber-500 group-hover:via-amber-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600 ring-1 ring-amber-100 group-hover:bg-amber-600 group-hover:text-white transition-colors">
                 <ShieldCheck size={24} />
               </div>
@@ -467,7 +394,7 @@ export default function Home() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500/40 via-purple-400/30 to-transparent group-hover:from-purple-500 group-hover:via-purple-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-purple-500/40 via-purple-400/30 to-transparent group-hover:from-purple-500 group-hover:via-purple-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-purple-600 ring-1 ring-purple-100 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                 <Crown size={24} />
               </div>
@@ -484,25 +411,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- 7. Blood Donor Wing (Compact & Direct) --- */}
-      <section id="blood-donor" className="relative py-16 bg-gradient-to-br from-red-600 via-red-700 to-red-900 text-white overflow-hidden">
-        
-        {/* Background Element: ECG Heartbeat Line */}
+      <section id="blood-donor" className="relative py-16 bg-linear-to-br from-red-600 via-red-700 to-red-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
            <svg className="h-full w-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
              <path fill="none" stroke="currentColor" strokeWidth="2" d="M0,160L48,160L80,64L112,256L144,160L192,160L240,160L272,64L304,256L336,160L1440,160" />
            </svg>
         </div>
         
-        {/* Background Element: Floating Particles */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-red-950/40 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           
           <div className="flex flex-col lg:flex-row items-center justify-end">
-            
-            {/* Content Wrapper */}
             <div className="lg:w-1/2 w-full">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-900/40 border border-red-500/50 text-red-100 text-xs md:text-sm font-semibold tracking-wide mb-6 backdrop-blur-sm">
                   <span className="relative flex h-2 w-2">
@@ -520,7 +441,6 @@ export default function Home() {
                 The CMRIT HSG Blood Donor wing bridges the gap between donors and those in critical need. We maintain a real-time database of student volunteers ready to respond to emergencies in Hyderabad.
               </p>
 
-               {/* Action Buttons */}
               <div className="flex flex-wrap gap-4">
                  <Link 
                     href="/blood-donor" 
@@ -528,13 +448,6 @@ export default function Home() {
                   >
                     <HeartPulse size={18} />
                     Register as Donor
-                  </Link>
-                  <Link 
-                    href="/blood-availability" 
-                    className="flex items-center gap-2 px-6 py-3 rounded-full font-bold tracking-wide border border-red-300/50 bg-red-900/10 hover:bg-red-900/30 hover:border-red-200 transition-all backdrop-blur-sm"
-                  >
-                    <Search size={18} />
-                    Find a Donor
                   </Link>
               </div>
             </div>
@@ -560,7 +473,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500/40 via-indigo-400/30 to-transparent group-hover:from-blue-500 group-hover:via-indigo-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-blue-500/40 via-indigo-400/30 to-transparent group-hover:from-blue-500 group-hover:via-indigo-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <Briefcase size={24} />
               </div>
@@ -571,7 +484,7 @@ export default function Home() {
               </p>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500/40 via-blue-400/30 to-transparent group-hover:from-indigo-500 group-hover:via-blue-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-indigo-500/40 via-blue-400/30 to-transparent group-hover:from-indigo-500 group-hover:via-blue-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 ring-1 ring-indigo-100 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 <GraduationCap size={24} />
               </div>
@@ -582,7 +495,7 @@ export default function Home() {
               </p>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500/40 via-green-400/30 to-transparent group-hover:from-emerald-500 group-hover:via-green-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-emerald-500/40 via-green-400/30 to-transparent group-hover:from-emerald-500 group-hover:via-green-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                 <Ticket size={24} />
               </div>
@@ -593,7 +506,7 @@ export default function Home() {
               </p>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-500/40 via-yellow-400/30 to-transparent group-hover:from-amber-500 group-hover:via-yellow-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-amber-500/40 via-yellow-400/30 to-transparent group-hover:from-amber-500 group-hover:via-yellow-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600 ring-1 ring-amber-100 group-hover:bg-amber-600 group-hover:text-white transition-colors">
                 <Trophy size={24} />
               </div>
@@ -604,7 +517,7 @@ export default function Home() {
               </p>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md border border-zinc-200 transition-all hover:-translate-y-1 hover:shadow-xl">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500/40 via-pink-400/30 to-transparent group-hover:from-purple-500 group-hover:via-pink-400"></div>
+              <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-purple-500/40 via-pink-400/30 to-transparent group-hover:from-purple-500 group-hover:via-pink-400"></div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-purple-600 ring-1 ring-purple-100 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                 <Landmark size={24} />
               </div>
@@ -617,8 +530,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* --- 11. Footer (The "Flash" & Grid Edition) --- */}
       <footer className="bg-zinc-50 border-t border-zinc-200">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">

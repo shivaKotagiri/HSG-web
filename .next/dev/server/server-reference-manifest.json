@@ -1,0 +1,51 @@
+{
+  "node": {
+    "60acf4d1ec8d058e9ee11660a491de873942cf1383": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/save-attendance.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "saveAttendance",
+          "filename": "actions/save-attendance.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser"
+      },
+      "filename": "actions/save-attendance.ts",
+      "exportedName": "saveAttendance"
+    },
+    "40d45789c5a5cbf226d60a132233716aac140cda76": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/register.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "registerStudent",
+          "filename": "actions/register.ts"
+        }
+      },
+      "layer": {
+        "app/register/page": "action-browser"
+      },
+      "filename": "actions/register.ts",
+      "exportedName": "registerStudent"
+    },
+    "40f2521837fe54d875ef57ad439003898cde86291a": {
+      "workers": {
+        "app/blood-donor/page": {
+          "moduleId": "[project]/.next-internal/server/app/blood-donor/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/submit-blood-donation.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "submitBloodDonation",
+          "filename": "actions/submit-blood-donation.ts"
+        }
+      },
+      "layer": {
+        "app/blood-donor/page": "action-browser"
+      },
+      "filename": "actions/submit-blood-donation.ts",
+      "exportedName": "submitBloodDonation"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "yz9eIXxcQQ9T9u1rOZMN4R8lX89/DPQGQudDans+A9c="
+}

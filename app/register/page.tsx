@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Link from "next/link";
@@ -8,15 +9,15 @@ import {
   Phone, MapPin, HeartPulse, Droplet, Calendar, Users, 
   ShieldCheck, Loader2, Command, FileBadge
 } from "lucide-react";
+import { registerStudent } from "@/actions/register"; 
 
 export default function RegisterPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   
-  // EXACT FIELDS from your original request
   const [formData, setFormData] = useState({
     fullName: "",
-    phn: "",              // USN / PHN
+    phn: "",             
     fatherName: "",
     motherName: "",
     age: "",
@@ -24,7 +25,7 @@ export default function RegisterPage() {
     presentAddress: "",
     permanentAddress: "",
     email: "",
-    phone: "",            // Contact Number
+    phone: "",            
     password: "",
     confirmPassword: "",
     healthIssues: false,
@@ -43,7 +44,22 @@ export default function RegisterPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  function mapBloodGroup(value: string) {
+    const map: Record<string, any> = {
+      "A+": "A_POS",
+      "A-": "A_NEG",
+      "B+": "B_POS",
+      "B-": "B_NEG",
+      "AB+": "AB_POS",
+      "AB-": "AB_NEG",
+      "O+": "O_POS",
+      "O-": "O_NEG",
+    };
+    return map[value];
+  }
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
     setIsLoading(true);
@@ -54,21 +70,29 @@ export default function RegisterPage() {
       return;
     }
 
-    // Simulate API delay
-    setTimeout(() => {
-      try {
-        const authPayload = {
-          role: "student",
-          ...formData,
-          createdAt: Date.now(),
-        };
-        localStorage.setItem("hsg_auth", JSON.stringify(authPayload));
-        router.push("/student-dashboard");
-      } catch {
-        setError("Registration failed.");
-        setIsLoading(false);
-      }
-    }, 1500);
+    const result = await registerStudent({
+      fullName: formData.fullName,
+      username: formData.phn,
+      email: formData.email,
+      phone: formData.phone,
+      fatherName: formData.fatherName,
+      motherName: formData.motherName,
+      presentAddress: formData.presentAddress,
+      permanentAddress: formData.permanentAddress,
+      age: Number(formData.age),
+      bloodGroup: mapBloodGroup(formData.bloodGroup),
+      healthIssues: formData.healthIssues,
+      password: formData.password,
+    });
+
+    if (result?.error) {
+      setError(result.error);
+      setIsLoading(false);
+      return;
+    }
+
+    // success
+    router.push("/login");
   };
 
   return (
@@ -91,8 +115,8 @@ export default function RegisterPage() {
                   </linearGradient>
                </defs>
             </svg>
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-indigo-600/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
+            <div className="absolute top-0 right-0 w-100 h-100 bg-blue-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-75 h-75 bg-indigo-600/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
 
         <div className="relative z-10 flex flex-col leading-none">
@@ -107,7 +131,7 @@ export default function RegisterPage() {
         {/* Motivational Quote */}
         <div className="relative z-10 border-l-2 border-zinc-800 pl-6 py-2">
            <p className="text-lg text-zinc-300 font-medium italic leading-relaxed">
-             "A Scout smiles and whistles under all circumstances."
+             &quot;A Scout smiles and whistles under all circumstances.&quot;
            </p>
            <p className="mt-3 text-xs font-bold text-zinc-500 uppercase tracking-widest">— Lord Baden-Powell</p>
         </div>
@@ -157,7 +181,7 @@ export default function RegisterPage() {
                   placeholder="John Doe" value={formData.fullName} onChange={handleChange} 
                 />
                 <InputGroup 
-                  id="phn" label="USN / PHN" icon={<FileBadge size={18} />} 
+                  id="phn" label="USERNAME" icon={<FileBadge size={18} />} 
                   placeholder="1CR22..." value={formData.phn} onChange={handleChange} 
                 />
               </div>
@@ -252,7 +276,7 @@ export default function RegisterPage() {
                 onClick={() => setFormData(prev => ({...prev, healthIssues: !prev.healthIssues}))}
                 className={`group flex items-start gap-4 p-5 rounded-xl border cursor-pointer transition-all duration-200 ${formData.healthIssues ? 'bg-red-50 border-red-200 ring-1 ring-red-200' : 'bg-white border-zinc-200 hover:border-zinc-400 hover:bg-zinc-50'}`}
               >
-                <div className={`mt-0.5 flex-shrink-0 flex items-center justify-center h-5 w-5 rounded border transition-colors ${formData.healthIssues ? 'bg-red-500 border-red-500 text-white' : 'bg-white border-zinc-300 group-hover:border-zinc-400'}`}>
+                <div className={`mt-0.5 shrink-0 flex items-center justify-center h-5 w-5 rounded border transition-colors ${formData.healthIssues ? 'bg-red-500 border-red-500 text-white' : 'bg-white border-zinc-300 group-hover:border-zinc-400'}`}>
                    {formData.healthIssues && <span className="text-xs">✓</span>}
                 </div>
                 <div className="flex-1">

@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40d45789c5a5cbf226d60a132233716aac140cda76": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/register.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "registerStudent",
+          "filename": "actions/register.ts"
+        }
+      },
+      "layer": {
+        "app/register/page": "action-browser"
+      },
+      "exportedName": "registerStudent",
+      "filename": "actions/register.ts"
+    }
+  },
+  "edge": {}
+}

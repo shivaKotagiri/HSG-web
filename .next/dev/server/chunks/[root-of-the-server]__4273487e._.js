@@ -1,0 +1,589 @@
+module.exports = [
+"[externals]/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-route-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/compiled/@opentelemetry/api [external] (next/dist/compiled/@opentelemetry/api, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/@opentelemetry/api", () => require("next/dist/compiled/@opentelemetry/api"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/work-unit-async-storage.external.js [external] (next/dist/server/app-render/work-unit-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/work-unit-async-storage.external.js", () => require("next/dist/server/app-render/work-unit-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/work-async-storage.external.js [external] (next/dist/server/app-render/work-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-storage.external.js", () => require("next/dist/server/app-render/work-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/util [external] (util, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("util", () => require("util"));
+
+module.exports = mod;
+}),
+"[externals]/url [external] (url, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("url", () => require("url"));
+
+module.exports = mod;
+}),
+"[externals]/http [external] (http, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("http", () => require("http"));
+
+module.exports = mod;
+}),
+"[externals]/crypto [external] (crypto, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("crypto", () => require("crypto"));
+
+module.exports = mod;
+}),
+"[externals]/assert [external] (assert, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("assert", () => require("assert"));
+
+module.exports = mod;
+}),
+"[externals]/querystring [external] (querystring, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("querystring", () => require("querystring"));
+
+module.exports = mod;
+}),
+"[externals]/buffer [external] (buffer, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("buffer", () => require("buffer"));
+
+module.exports = mod;
+}),
+"[externals]/zlib [external] (zlib, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("zlib", () => require("zlib"));
+
+module.exports = mod;
+}),
+"[externals]/https [external] (https, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("https", () => require("https"));
+
+module.exports = mod;
+}),
+"[externals]/events [external] (events, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("events", () => require("events"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/after-task-async-storage.external.js [external] (next/dist/server/app-render/after-task-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/after-task-async-storage.external.js", () => require("next/dist/server/app-render/after-task-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/bcrypt [external] (bcrypt, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("bcrypt", () => require("bcrypt"));
+
+module.exports = mod;
+}),
+"[externals]/node:path [external] (node:path, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("node:path", () => require("node:path"));
+
+module.exports = mod;
+}),
+"[externals]/node:url [external] (node:url, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("node:url", () => require("node:url"));
+
+module.exports = mod;
+}),
+"[externals]/@prisma/client/runtime/client [external] (@prisma/client/runtime/client, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("@prisma/client/runtime/client", () => require("@prisma/client/runtime/client"));
+
+module.exports = mod;
+}),
+"[project]/app/generated/prisma/internal/class.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* !!! This is code generated by Prisma. Do not edit directly. !!! */ /* eslint-disable */ // biome-ignore-all lint: generated file
+// @ts-nocheck 
+/*
+ * WARNING: This is an internal file that is subject to change!
+ *
+ * 🛑 Under no circumstances should you import this file directly! 🛑
+ *
+ * Please import the `PrismaClient` class from the `client.ts` file instead.
+ */ __turbopack_context__.s([
+    "getPrismaClientClass",
+    ()=>getPrismaClientClass
+]);
+var __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/@prisma/client/runtime/client [external] (@prisma/client/runtime/client, cjs)");
+;
+const config = {
+    "previewFeatures": [],
+    "clientVersion": "7.2.0",
+    "engineVersion": "0c8ef2ce45c83248ab3df073180d5eda9e8be7a3",
+    "activeProvider": "postgresql",
+    "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client\"\n  output   = \"../app/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n}\n\nenum AttendanceStatus {\n  PRESENT\n  ABSENT\n}\n\nenum BloodGroup {\n  A_POS\n  A_NEG\n  B_POS\n  B_NEG\n  AB_POS\n  AB_NEG\n  O_POS\n  O_NEG\n}\n\nenum HealthStatus {\n  YES\n  NO\n}\n\nmodel BloodDonation {\n  id             String     @id @default(cuid())\n  fullName       String\n  studentId      String?\n  phoneNumber    String\n  email          String\n  bloodGroup     BloodGroup\n  lastDonationAt DateTime?\n\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n\n  @@index([bloodGroup])\n  @@index([studentId])\n  @@index([phoneNumber])\n}\n\nmodel Student {\n  id String @id @default(uuid())\n\n  email        String @unique\n  mobileNumber String @unique\n  password     String\n\n  fullName   String\n  username   String @unique\n  fatherName String\n  motherName String\n\n  presentAddress   String\n  permanentAddress String\n\n  age          Int\n  bloodGroup   BloodGroup\n  healthIssues HealthStatus\n\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n\n  attendances Attendance[]\n}\n\nmodel Admin {\n  id String @id @default(uuid())\n\n  email    String @unique\n  password String\n\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n\n  attendances Attendance[]\n}\n\nmodel Attendance {\n  id String @id @default(uuid())\n\n  date   DateTime\n  status AttendanceStatus\n\n  studentId String\n  adminId   String\n\n  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)\n  admin   Admin   @relation(fields: [adminId], references: [id], onDelete: Cascade)\n\n  createdAt DateTime @default(now())\n\n  @@unique([studentId, date])\n}\n",
+    "runtimeDataModel": {
+        "models": {},
+        "enums": {},
+        "types": {}
+    }
+};
+config.runtimeDataModel = JSON.parse("{\"models\":{\"BloodDonation\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"fullName\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"studentId\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"phoneNumber\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"email\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"bloodGroup\",\"kind\":\"enum\",\"type\":\"BloodGroup\"},{\"name\":\"lastDonationAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"updatedAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"}],\"dbName\":null},\"Student\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"email\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"mobileNumber\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"password\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"fullName\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"username\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"fatherName\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"motherName\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"presentAddress\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"permanentAddress\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"age\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"bloodGroup\",\"kind\":\"enum\",\"type\":\"BloodGroup\"},{\"name\":\"healthIssues\",\"kind\":\"enum\",\"type\":\"HealthStatus\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"updatedAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"attendances\",\"kind\":\"object\",\"type\":\"Attendance\",\"relationName\":\"AttendanceToStudent\"}],\"dbName\":null},\"Admin\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"email\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"password\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"updatedAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"attendances\",\"kind\":\"object\",\"type\":\"Attendance\",\"relationName\":\"AdminToAttendance\"}],\"dbName\":null},\"Attendance\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"date\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"status\",\"kind\":\"enum\",\"type\":\"AttendanceStatus\"},{\"name\":\"studentId\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"adminId\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"student\",\"kind\":\"object\",\"type\":\"Student\",\"relationName\":\"AttendanceToStudent\"},{\"name\":\"admin\",\"kind\":\"object\",\"type\":\"Admin\",\"relationName\":\"AdminToAttendance\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"}],\"dbName\":null}},\"enums\":{},\"types\":{}}");
+async function decodeBase64AsWasm(wasmBase64) {
+    const { Buffer } = await __turbopack_context__.A("[externals]/node:buffer [external] (node:buffer, cjs, async loader)");
+    const wasmArray = Buffer.from(wasmBase64, 'base64');
+    return new WebAssembly.Module(wasmArray);
+}
+config.compilerWasm = {
+    getRuntime: async ()=>await __turbopack_context__.A("[externals]/@prisma/client/runtime/query_compiler_bg.postgresql.mjs [external] (@prisma/client/runtime/query_compiler_bg.postgresql.mjs, esm_import, async loader)"),
+    getQueryCompilerWasmModule: async ()=>{
+        const { wasm } = await __turbopack_context__.A("[externals]/@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs [external] (@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs, esm_import, async loader)");
+        return await decodeBase64AsWasm(wasm);
+    }
+};
+function getPrismaClientClass() {
+    return __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["getPrismaClient"](config);
+}
+}),
+"[project]/app/generated/prisma/internal/prismaNamespace.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* !!! This is code generated by Prisma. Do not edit directly. !!! */ /* eslint-disable */ // biome-ignore-all lint: generated file
+// @ts-nocheck 
+/*
+ * WARNING: This is an internal file that is subject to change!
+ *
+ * 🛑 Under no circumstances should you import this file directly! 🛑
+ *
+ * All exports from this file are wrapped under a `Prisma` namespace object in the client.ts file.
+ * While this enables partial backward compatibility, it is not part of the stable public API.
+ *
+ * If you are looking for your Models, Enums, and Input Types, please import them from the respective
+ * model files in the `model` directory!
+ */ __turbopack_context__.s([
+    "AdminScalarFieldEnum",
+    ()=>AdminScalarFieldEnum,
+    "AnyNull",
+    ()=>AnyNull,
+    "AttendanceScalarFieldEnum",
+    ()=>AttendanceScalarFieldEnum,
+    "BloodDonationScalarFieldEnum",
+    ()=>BloodDonationScalarFieldEnum,
+    "DbNull",
+    ()=>DbNull,
+    "Decimal",
+    ()=>Decimal,
+    "JsonNull",
+    ()=>JsonNull,
+    "ModelName",
+    ()=>ModelName,
+    "NullTypes",
+    ()=>NullTypes,
+    "NullsOrder",
+    ()=>NullsOrder,
+    "PrismaClientInitializationError",
+    ()=>PrismaClientInitializationError,
+    "PrismaClientKnownRequestError",
+    ()=>PrismaClientKnownRequestError,
+    "PrismaClientRustPanicError",
+    ()=>PrismaClientRustPanicError,
+    "PrismaClientUnknownRequestError",
+    ()=>PrismaClientUnknownRequestError,
+    "PrismaClientValidationError",
+    ()=>PrismaClientValidationError,
+    "QueryMode",
+    ()=>QueryMode,
+    "SortOrder",
+    ()=>SortOrder,
+    "Sql",
+    ()=>Sql,
+    "StudentScalarFieldEnum",
+    ()=>StudentScalarFieldEnum,
+    "TransactionIsolationLevel",
+    ()=>TransactionIsolationLevel,
+    "defineExtension",
+    ()=>defineExtension,
+    "empty",
+    ()=>empty,
+    "getExtensionContext",
+    ()=>getExtensionContext,
+    "join",
+    ()=>join,
+    "prismaVersion",
+    ()=>prismaVersion,
+    "raw",
+    ()=>raw,
+    "sql",
+    ()=>sql
+]);
+var __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/@prisma/client/runtime/client [external] (@prisma/client/runtime/client, cjs)");
+;
+const PrismaClientKnownRequestError = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["PrismaClientKnownRequestError"];
+const PrismaClientUnknownRequestError = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["PrismaClientUnknownRequestError"];
+const PrismaClientRustPanicError = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["PrismaClientRustPanicError"];
+const PrismaClientInitializationError = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["PrismaClientInitializationError"];
+const PrismaClientValidationError = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["PrismaClientValidationError"];
+const sql = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["sqltag"];
+const empty = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["empty"];
+const join = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["join"];
+const raw = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["raw"];
+const Sql = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["Sql"];
+const Decimal = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["Decimal"];
+const getExtensionContext = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["Extensions"].getExtensionContext;
+const prismaVersion = {
+    client: "7.2.0",
+    engine: "0c8ef2ce45c83248ab3df073180d5eda9e8be7a3"
+};
+const NullTypes = {
+    DbNull: __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["NullTypes"].DbNull,
+    JsonNull: __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["NullTypes"].JsonNull,
+    AnyNull: __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["NullTypes"].AnyNull
+};
+const DbNull = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["DbNull"];
+const JsonNull = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["JsonNull"];
+const AnyNull = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["AnyNull"];
+const ModelName = {
+    BloodDonation: 'BloodDonation',
+    Student: 'Student',
+    Admin: 'Admin',
+    Attendance: 'Attendance'
+};
+const TransactionIsolationLevel = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["makeStrictEnum"]({
+    ReadUncommitted: 'ReadUncommitted',
+    ReadCommitted: 'ReadCommitted',
+    RepeatableRead: 'RepeatableRead',
+    Serializable: 'Serializable'
+});
+const BloodDonationScalarFieldEnum = {
+    id: 'id',
+    fullName: 'fullName',
+    studentId: 'studentId',
+    phoneNumber: 'phoneNumber',
+    email: 'email',
+    bloodGroup: 'bloodGroup',
+    lastDonationAt: 'lastDonationAt',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+};
+const StudentScalarFieldEnum = {
+    id: 'id',
+    email: 'email',
+    mobileNumber: 'mobileNumber',
+    password: 'password',
+    fullName: 'fullName',
+    username: 'username',
+    fatherName: 'fatherName',
+    motherName: 'motherName',
+    presentAddress: 'presentAddress',
+    permanentAddress: 'permanentAddress',
+    age: 'age',
+    bloodGroup: 'bloodGroup',
+    healthIssues: 'healthIssues',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+};
+const AdminScalarFieldEnum = {
+    id: 'id',
+    email: 'email',
+    password: 'password',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+};
+const AttendanceScalarFieldEnum = {
+    id: 'id',
+    date: 'date',
+    status: 'status',
+    studentId: 'studentId',
+    adminId: 'adminId',
+    createdAt: 'createdAt'
+};
+const SortOrder = {
+    asc: 'asc',
+    desc: 'desc'
+};
+const QueryMode = {
+    default: 'default',
+    insensitive: 'insensitive'
+};
+const NullsOrder = {
+    first: 'first',
+    last: 'last'
+};
+const defineExtension = __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client$2f$runtime$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2f$runtime$2f$client$2c$__cjs$29$__["Extensions"].defineExtension;
+}),
+"[project]/app/generated/prisma/enums.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* !!! This is code generated by Prisma. Do not edit directly. !!! */ /* eslint-disable */ // biome-ignore-all lint: generated file
+// @ts-nocheck 
+/*
+* This file exports all enum related types from the schema.
+*
+* 🟢 You can import this file directly.
+*/ __turbopack_context__.s([
+    "AttendanceStatus",
+    ()=>AttendanceStatus,
+    "BloodGroup",
+    ()=>BloodGroup,
+    "HealthStatus",
+    ()=>HealthStatus
+]);
+const AttendanceStatus = {
+    PRESENT: 'PRESENT',
+    ABSENT: 'ABSENT'
+};
+const BloodGroup = {
+    A_POS: 'A_POS',
+    A_NEG: 'A_NEG',
+    B_POS: 'B_POS',
+    B_NEG: 'B_NEG',
+    AB_POS: 'AB_POS',
+    AB_NEG: 'AB_NEG',
+    O_POS: 'O_POS',
+    O_NEG: 'O_NEG'
+};
+const HealthStatus = {
+    YES: 'YES',
+    NO: 'NO'
+};
+}),
+"[project]/app/generated/prisma/client.ts [app-route] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+/* !!! This is code generated by Prisma. Do not edit directly. !!! */ /* eslint-disable */ // biome-ignore-all lint: generated file
+// @ts-nocheck 
+/*
+ * This file should be your main import to use Prisma. Through it you get access to all the models, enums, and input types.
+ * If you're looking for something you can import in the client-side of your application, please refer to the `browser.ts` file instead.
+ *
+ * 🟢 You can import this file directly.
+ */ __turbopack_context__.s([
+    "PrismaClient",
+    ()=>PrismaClient
+]);
+var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$path__$5b$external$5d$__$28$node$3a$path$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:path [external] (node:path, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$url__$5b$external$5d$__$28$node$3a$url$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:url [external] (node:url, cjs)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$internal$2f$class$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/generated/prisma/internal/class.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$internal$2f$prismaNamespace$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/generated/prisma/internal/prismaNamespace.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$enums$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/generated/prisma/enums.ts [app-route] (ecmascript)");
+const __TURBOPACK__import$2e$meta__ = {
+    get url () {
+        return `file://${__turbopack_context__.P("app/generated/prisma/client.ts")}`;
+    }
+};
+;
+;
+globalThis['__dirname'] = __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$path__$5b$external$5d$__$28$node$3a$path$2c$__cjs$29$__["dirname"]((0, __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$url__$5b$external$5d$__$28$node$3a$url$2c$__cjs$29$__["fileURLToPath"])(__TURBOPACK__import$2e$meta__.url));
+;
+;
+;
+;
+const PrismaClient = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$internal$2f$class$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getPrismaClientClass"]();
+;
+}),
+"[externals]/pg [external] (pg, esm_import)", ((__turbopack_context__) => {
+"use strict";
+
+return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
+
+const mod = await __turbopack_context__.y("pg");
+
+__turbopack_context__.n(mod);
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, true);}),
+"[project]/lib/prisma.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$client$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/app/generated/prisma/client.ts [app-route] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prisma$2f$adapter$2d$pg$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@prisma/adapter-pg/dist/index.mjs [app-route] (ecmascript)");
+var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prisma$2f$adapter$2d$pg$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__
+]);
+[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prisma$2f$adapter$2d$pg$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+;
+;
+if (!process.env.DATABASE_URL) {
+    throw new Error("DATABASE_URL is not set");
+}
+const globalForPrisma = globalThis;
+const adapter = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prisma$2f$adapter$2d$pg$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["PrismaPg"]({
+    connectionString: process.env.DATABASE_URL
+});
+const prisma = globalForPrisma.prisma ?? new __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$generated$2f$prisma$2f$client$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__["PrismaClient"]({
+    adapter,
+    log: [
+        "error"
+    ]
+});
+if ("TURBOPACK compile-time truthy", 1) {
+    globalForPrisma.prisma = prisma;
+}
+const __TURBOPACK__default__export__ = prisma;
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, false);}),
+"[project]/lib/authOptions.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
+
+/* eslint-disable @typescript-eslint/no-explicit-any */ __turbopack_context__.s([
+    "authOptions",
+    ()=>authOptions
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/providers/credentials.js [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$bcrypt__$5b$external$5d$__$28$bcrypt$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/bcrypt [external] (bcrypt, cjs)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/prisma.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/zod/index.js [app-route] (ecmascript) <locals>");
+var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__
+]);
+[__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+;
+;
+;
+;
+const credentialsZod = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].object({
+    email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].string().email(),
+    password: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].string().min(6).max(25)
+});
+const authOptions = {
+    pages: {
+        signIn: "/login"
+    },
+    providers: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"])({
+            name: "Credentials",
+            credentials: {
+                email: {
+                    label: "College Email",
+                    type: "text",
+                    placeholder: "rollno@cmrithyderabad.edu.in"
+                },
+                password: {
+                    label: "Password",
+                    type: "password"
+                }
+            },
+            async authorize (credentials) {
+                if (!credentials) return null;
+                const parsed = credentialsZod.safeParse(credentials);
+                if (!parsed.success) return null;
+                const { email, password } = parsed.data;
+                // Admin
+                const admin = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].admin.findUnique({
+                    where: {
+                        email
+                    }
+                });
+                if (admin) {
+                    const valid = await __TURBOPACK__imported__module__$5b$externals$5d2f$bcrypt__$5b$external$5d$__$28$bcrypt$2c$__cjs$29$__["default"].compare(password, admin.password);
+                    if (!valid) return null;
+                    return {
+                        id: admin.id,
+                        name: "Admin",
+                        email: admin.email,
+                        role: "admin"
+                    };
+                }
+                // Student
+                const student = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].student.findUnique({
+                    where: {
+                        email
+                    }
+                });
+                if (!student || !student.password) return null;
+                const valid = await __TURBOPACK__imported__module__$5b$externals$5d2f$bcrypt__$5b$external$5d$__$28$bcrypt$2c$__cjs$29$__["default"].compare(password, student.password);
+                if (!valid) return null;
+                return {
+                    id: student.id,
+                    name: student.fullName,
+                    email: student.email,
+                    role: "student"
+                };
+            }
+        })
+    ],
+    secret: process.env.NEXTAUTH_SECRET,
+    callbacks: {
+        async jwt ({ token, user }) {
+            if (user) {
+                token.role = user.role;
+            }
+            return token;
+        },
+        async session ({ session, token }) {
+            if (session.user) {
+                session.user.id = token.sub;
+                session.user.role = token.role;
+            }
+            return session;
+        },
+        async redirect ({ url, baseUrl }) {
+            // After successful sign in, NextAuth sends user to baseUrl
+            if (url === baseUrl || url === `${baseUrl}/`) return `${baseUrl}/dashboard`;
+            // Allow relative redirects
+            if (url.startsWith("/")) return `${baseUrl}${url}`;
+            return url;
+        }
+    }
+};
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, false);}),
+"[project]/app/api/auth/[...nextauth]/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
+
+__turbopack_context__.s([
+    "GET",
+    ()=>handler,
+    "POST",
+    ()=>handler
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/index.js [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$authOptions$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/authOptions.ts [app-route] (ecmascript)");
+var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$authOptions$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__
+]);
+[__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$authOptions$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+;
+;
+const handler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$authOptions$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["authOptions"]);
+;
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, false);}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__4273487e._.js.map

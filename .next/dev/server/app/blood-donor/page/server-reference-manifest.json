@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40f2521837fe54d875ef57ad439003898cde86291a": {
+      "workers": {
+        "app/blood-donor/page": {
+          "moduleId": "[project]/.next-internal/server/app/blood-donor/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/submit-blood-donation.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "submitBloodDonation",
+          "filename": "actions/submit-blood-donation.ts"
+        }
+      },
+      "layer": {
+        "app/blood-donor/page": "action-browser"
+      },
+      "exportedName": "submitBloodDonation",
+      "filename": "actions/submit-blood-donation.ts"
+    }
+  },
+  "edge": {}
+}

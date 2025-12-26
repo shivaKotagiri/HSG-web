@@ -20,7 +20,12 @@ const nextConfig: NextConfig = {
         hostname: 'i.ibb.co',
         port: '',
         pathname: '/**',
-      },
+      }, {
+        protocol: 'https',
+        hostname: 'api.dicebear.com',
+        port: '',
+        pathname: '/**'
+      }
     ],
   },
 };

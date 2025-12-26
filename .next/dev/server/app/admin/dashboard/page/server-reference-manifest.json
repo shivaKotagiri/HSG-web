@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60acf4d1ec8d058e9ee11660a491de873942cf1383": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/save-attendance.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "saveAttendance",
+          "filename": "actions/save-attendance.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser"
+      },
+      "exportedName": "saveAttendance",
+      "filename": "actions/save-attendance.ts"
+    }
+  },
+  "edge": {}
+}

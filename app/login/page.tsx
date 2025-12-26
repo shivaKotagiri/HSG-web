@@ -12,12 +12,37 @@ import {
   CreditCard,
   ChevronLeft
 } from "lucide-react";
+import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
   const [loginType, setLoginType] = useState<"student" | "admin">("student");
   const [identity, setIdentity] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (!identity || !password) {
+      alert("Please enter all fields");
+      return;
+    }
+
+    const result = await signIn("credentials", {
+      redirect: false, 
+      email: identity,
+      password,
+    });
+
+    if (result?.error) {
+      alert("Invalid credentials");
+      return;
+    }
+
+    // Successful login → go to dashboard redirect handler
+    router.push("/dashboard");
+  }
+
 
   return (
     <div className="min-h-screen w-full flex bg-white">
@@ -31,8 +56,8 @@ export default function LoginPage() {
                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="none" stroke="currentColor" strokeWidth="0.5" />
                <path d="M0 100 C 50 20 80 20 100 100 Z" fill="none" stroke="currentColor" strokeWidth="0.5" />
             </svg>
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
+            <div className="absolute top-0 right-0 w-125 h-125 bg-blue-600/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-125 h-125 bg-indigo-600/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
 
         {/* Brand Text Only */}
@@ -94,14 +119,7 @@ export default function LoginPage() {
           {/* Form */}
           <form
             className="space-y-8"
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (loginType === "admin") {
-                router.push("/admin-dashboard");
-              } else {
-                router.push("/student-dashboard");
-              }
-            }}
+            onSubmit={handleSubmit}
           >
             
             {/* Input 1: Identity */}
