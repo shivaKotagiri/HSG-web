@@ -38,14 +38,7 @@ export default async function AdminDashboard() {
   const absentToday = totalStudents - presentToday;
 
   const bloodDonors = await getBloodDonors();
-
-  function normalizeDate(date: Date) {
-    const d = new Date(date);
-    d.setHours(0, 0, 0, 0);
-    return d;
-  }
-
-
+  
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-indigo-100">
       <AdminHeader

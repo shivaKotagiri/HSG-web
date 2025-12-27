@@ -249,3 +249,5 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:23:54.228] Browser WARN    Image with src "https://i.ibb.co/1DFyvTX/CMR-INSTITUTE-OF-TECHNOLOGY-1.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:23:54.228] Browser WARN    Image with src "https://res.cloudinary.com/dq2suftps/image/upload/v1722516854/logo_bivaq2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:24.016] Server  LOG      ✓ Compiled in 22ms
+[00:25:26.322] Server  LOG      ✓ Compiled in 19ms
