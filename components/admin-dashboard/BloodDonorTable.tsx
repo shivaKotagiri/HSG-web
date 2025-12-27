@@ -32,7 +32,7 @@ export default function BloodDonorTable({ donors }: { donors: Donor[] }) {
         <tbody>
           {donors.map((d) => (
             <tr key={d.id} className="border-t">
-              <td className="px-6 py-4 font-bold">
+              <td className="px-6 py-4 font-bold text-center text-slate-800">
                 {d.fullName}
                 {d.studentId && (
                   <div className="text-xs text-slate-500">
@@ -41,16 +41,16 @@ export default function BloodDonorTable({ donors }: { donors: Donor[] }) {
                 )}
               </td>
 
-              <td className="px-6 py-4">
+              <td className="px-6 py-4 text-center">
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-rose-50 text-rose-600 text-xs font-bold">
                   <Droplets className="w-3 h-3" />
                   {d.bloodGroup}
                 </span>
               </td>
 
-              <td className="px-6 py-4">
-                <div className="flex flex-col text-xs">
-                  <span className="flex items-center gap-1">
+              <td className="px-6 py-4 text-slate-600 ">
+                <div className="flex flex-col text-xs justify-center items-center">
+                  <span className="flex items-center gap-1 ">
                     <Phone className="w-3 h-3" /> {d.phoneNumber}
                   </span>
                   <span className="flex items-center gap-1">
@@ -59,7 +59,7 @@ export default function BloodDonorTable({ donors }: { donors: Donor[] }) {
                 </div>
               </td>
 
-              <td className="px-6 py-4 text-xs">
+              <td className="px-6 py-4 text-sm text-slate-600 text-center">
                 {d.lastDonationAt
                   ? new Date(d.lastDonationAt).toLocaleDateString()
                   : "—"}

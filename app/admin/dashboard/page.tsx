@@ -37,7 +37,14 @@ export default async function AdminDashboard() {
   const totalStudents = students.length;
   const absentToday = totalStudents - presentToday;
 
-//   const bloodDonors = await getBloodDonors();
+  const bloodDonors = await getBloodDonors();
+
+  function normalizeDate(date: Date) {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
 
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-indigo-100">
@@ -105,12 +112,7 @@ export default async function AdminDashboard() {
         </section>
 
         <section id="donors">
-          <BloodDonorTable donors={[{
-              id: '1', fullName: "shiva", studentId: "1234567890",
-              phoneNumber: "",
-              email: "",
-              bloodGroup: ""
-          }]} />
+          <BloodDonorTable donors={bloodDonors} />
         </section>
       </main>
     </div>

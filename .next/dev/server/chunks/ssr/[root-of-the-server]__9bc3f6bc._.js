@@ -578,24 +578,33 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 ;
-async function saveAttendance(date, attendance) {
+async function saveAttendance(date, records) {
     const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getServerSession"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$authOptions$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["authOptions"]);
     if (!session || session.user.role !== "admin") {
         throw new Error("Unauthorized");
     }
-    await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].attendance.deleteMany({
-        where: {
-            date: new Date(date)
-        }
-    });
-    await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].attendance.createMany({
-        data: attendance.map((a)=>({
-                date: new Date(date),
-                status: a.status,
-                studentId: a.studentId,
-                adminId: session.user.id
-            }))
-    });
+    const adminId = session.user.id;
+    if (!adminId) throw new Error("Invalid admin session");
+    const attendanceDate = new Date(date);
+    attendanceDate.setHours(0, 0, 0, 0);
+    await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].$transaction(records.map((record)=>__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].attendance.upsert({
+            where: {
+                studentId_date: {
+                    studentId: record.studentId,
+                    date: attendanceDate
+                }
+            },
+            update: {
+                status: record.status,
+                adminId
+            },
+            create: {
+                studentId: record.studentId,
+                date: attendanceDate,
+                status: record.status,
+                adminId
+            }
+        })));
 }
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([

@@ -1,56 +1,77 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { Check, X, Search, Save, Calendar as CalendarIcon, Loader2 } from "lucide-react";
+import {
+  Check,
+  X,
+  Search,
+  Save,
+  Calendar as CalendarIcon,
+  Loader2,
+} from "lucide-react";
 import { useState } from "react";
-import { saveAttendance } from "@/actions/save-attendance"; 
-
+import { saveAttendance } from "@/actions/save-attendance";
+import { useRouter } from "next/navigation";
 
 interface Student {
   id: string;
   name: string;
   roll: string;
-  status: string;
+  status: "PRESENT" | "ABSENT";
 }
 
 interface ManagerProps {
   students: Student[];
 }
 
-export default function AttendanceManager({ students: initialStudents }: ManagerProps) {
-  const [students, setStudents] = useState(initialStudents);
+export default function AttendanceManager({
+  students: initialStudents,
+}: ManagerProps) {
+  const [students, setStudents] = useState<Student[]>(initialStudents);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
+  const [selectedDate, setSelectedDate] = useState(
+    new Date().toISOString().split("T")[0]
+  );
   const [isSaving, setIsSaving] = useState(false);
+  const router = useRouter();
 
-  const toggleStatus = (id: string, newStatus: string) => {
+  /* ---------- helpers ---------- */
+
+  const toggleStatus = (id: string, status: "PRESENT" | "ABSENT") => {
     setStudents((prev) =>
-      prev.map((s) => (s.id === id ? { ...s, status: newStatus } : s))
+      prev.map((s) => (s.id === id ? { ...s, status } : s))
     );
   };
 
-  const markAll = (status: string) => {
+  const markAll = (status: "PRESENT" | "ABSENT") => {
     setStudents((prev) => prev.map((s) => ({ ...s, status })));
   };
 
-    const handleSave = async () => {
-        try {
-            setIsSaving(true);
+  /* ---------- save ---------- */
 
-            await saveAttendance(
-            selectedDate,
-            students.map((s) => ({
-                studentId: s.id,
-                status: s.status as "PRESENT" | "ABSENT",
-            }))
-            );
-        } catch (err) {
-            console.error(err);
-            alert("Failed to save attendance");
-        } finally {
-            setIsSaving(false);
-        }
-    };
+  const handleSave = async () => {
+    setIsSaving(true);
 
+    try {
+      await saveAttendance(
+        selectedDate,
+        students.map((s) => ({
+          studentId: s.id,
+          status: s.status,
+        }))
+      );
+
+      router.refresh(); // 🔥 IMPORTANT
+      alert("Attendance saved successfully");
+    } catch (error) {
+      alert("Failed to save attendance");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+
+  /* ---------- filters ---------- */
 
   const filteredStudents = students.filter(
     (s) =>
@@ -58,67 +79,76 @@ export default function AttendanceManager({ students: initialStudents }: Manager
       s.roll.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  /* ---------- UI ---------- */
+
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col h-full">
-      <div className="p-6 border-b border-gray-100 bg-white">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+      {/* Header */}
+      <div className="p-6 border-b border-gray-100">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
           <div>
-            <h3 className="text-lg font-bold text-slate-900">Mark Attendance</h3>
-            <p className="text-slate-500 text-sm">Manage daily student records</p>
+            <h3 className="text-lg font-bold text-slate-900">
+              Mark Attendance
+            </h3>
+            <p className="text-sm text-slate-500">
+              Manage daily student records
+            </p>
           </div>
-          
+
           <div className="flex items-center gap-3">
             <div className="relative">
               <CalendarIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-              <input 
-                type="date" 
+              <input
+                type="date"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
-                className="pl-10 pr-4 py-2 border border-gray-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500"
+                className="pl-10 pr-4 py-2 text-slate-600 border rounded-xl text-sm"
               />
             </div>
-            <button 
+
+            <button
               onClick={handleSave}
               disabled={isSaving}
-              className="flex items-center gap-2 px-6 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-400 text-white text-sm font-bold rounded-xl transition-all shadow-md shadow-indigo-200 active:scale-95 disabled:active:scale-100"
+              className="flex items-center gap-2 px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold disabled:opacity-60"
             >
               {isSaving ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  Saving...
+                  Saving
                 </>
               ) : (
                 <>
                   <Save className="w-4 h-4" />
-                  Save Changes
+                  Save
                 </>
               )}
             </button>
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-between items-center">
+        {/* Search + bulk */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-between">
           <div className="relative w-full sm:w-72">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-800" />
             <input
               type="text"
-              placeholder="Search by name or roll no..."
+              placeholder="Search name / roll"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border-none rounded-xl text-sm font-medium text-slate-900 focus:ring-2 focus:ring-indigo-500/20 placeholder:text-slate-400"
+              className="w-full pl-10 pr-4 text-slate-600 py-2 rounded-xl bg-slate-50"
             />
           </div>
-          
-          <div className="flex items-center gap-2 w-full sm:w-auto">
-            <button 
+
+          <div className="flex gap-2">
+            <button
               onClick={() => markAll("PRESENT")}
-              className="flex-1 sm:flex-none px-4 py-2 text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-lg border border-emerald-100 transition-colors"
+              className="px-4 py-2 text-xs font-bold bg-emerald-50 text-emerald-700 rounded-lg"
             >
               Mark All Present
             </button>
-            <button 
+            <button
               onClick={() => markAll("ABSENT")}
-              className="flex-1 sm:flex-none px-4 py-2 text-xs font-bold text-rose-700 bg-rose-50 hover:bg-rose-100 rounded-lg border border-rose-100 transition-colors"
+              className="px-4 py-2 text-xs font-bold bg-rose-50 text-rose-700 rounded-lg"
             >
               Mark All Absent
             </button>
@@ -126,54 +156,43 @@ export default function AttendanceManager({ students: initialStudents }: Manager
         </div>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm text-left">
-          <thead className="bg-slate-50 border-b border-gray-100">
+      {/* Table */}
+      <div className="overflow-x-auto text-background">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 border-b border-b-neutral-50">
             <tr>
-              <th className="px-6 py-4 font-semibold text-slate-600">Student Info</th>
-              <th className="px-6 py-4 font-semibold text-slate-600 text-center">Status</th>
+              <th className="px-6 py-4 text-left">Student</th>
+              <th className="px-6 py-4 text-center">Status</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-50">
-            {filteredStudents.map((student) => (
-              <tr key={student.id} className="group hover:bg-slate-50/50 transition-colors">
+          <tbody>
+            {filteredStudents.map((s) => (
+              <tr key={s.id} className="border-b border-b-neutral-50 hover:bg-slate-50">
                 <td className="px-6 py-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-sm">
-                      {student.name.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-bold text-slate-900">{student.name}</p>
-                      <p className="text-xs font-medium text-slate-500 bg-slate-100 inline-block px-1.5 py-0.5 rounded mt-0.5">
-                        {student.roll}
-                      </p>
-                    </div>
-                  </div>
+                  <p className="font-bold">{s.name}</p>
+                  <p className="text-xs text-slate-500">{s.roll}</p>
                 </td>
                 <td className="px-6 py-4">
-                  <div className="flex justify-center items-center gap-2">
+                  <div className="flex justify-center gap-2">
                     <button
-                      onClick={() => toggleStatus(student.id, "PRESENT")}
-                      className={`relative flex-1 max-w-25 flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg border transition-all duration-200 overflow-hidden ${
-                        student.status === "PRESENT"
-                          ? "bg-emerald-500 border-emerald-600 text-white shadow-md shadow-emerald-200 scale-105 z-10"
-                          : "bg-white border-gray-200 text-gray-400 hover:border-emerald-200 hover:text-emerald-500"
+                      onClick={() => toggleStatus(s.id, "PRESENT")}
+                      className={`px-4 py-2 rounded-lg text-xs font-bold ${
+                        s.status === "PRESENT"
+                          ? "bg-emerald-500 text-white"
+                          : "bg-gray-100 text-gray-400"
                       }`}
                     >
-                      <Check className="w-4 h-4" />
-                      <span className="font-semibold text-xs">Present</span>
+                      <Check className="inline w-4 h-4" /> Present
                     </button>
-                    
                     <button
-                      onClick={() => toggleStatus(student.id, "ABSENT")}
-                      className={`relative flex-1 max-w-25 flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg border transition-all duration-200 overflow-hidden ${
-                        student.status === "ABSENT"
-                          ? "bg-rose-500 border-rose-600 text-white shadow-md shadow-rose-200 scale-105 z-10"
-                          : "bg-white border-gray-200 text-gray-400 hover:border-rose-200 hover:text-rose-500"
+                      onClick={() => toggleStatus(s.id, "ABSENT")}
+                      className={`px-4 py-2 rounded-lg text-xs font-bold ${
+                        s.status === "ABSENT"
+                          ? "bg-rose-500 text-white"
+                          : "bg-gray-100 text-gray-400"
                       }`}
                     >
-                      <X className="w-4 h-4" />
-                      <span className="font-semibold text-xs">Absent</span>
+                      <X className="inline w-4 h-4" /> Absent
                     </button>
                   </div>
                 </td>
