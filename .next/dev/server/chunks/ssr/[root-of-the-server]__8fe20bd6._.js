@@ -1059,7 +1059,7 @@ async function StudentDashboard() {
                     fullName: student.fullName,
                     rollNumber: student.username,
                     email: student.email,
-                    avatar: "/avatar.png"
+                    avatar: "/user.png"
                 }
             }, void 0, false, {
                 fileName: "[project]/app/student/dashboard/page.tsx",

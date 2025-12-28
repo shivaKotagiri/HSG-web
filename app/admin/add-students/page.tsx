@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { 
@@ -9,7 +8,7 @@ import {
   Phone, MapPin, HeartPulse, Droplet, Calendar, Users, 
   ShieldCheck, Loader2, Command, FileBadge
 } from "lucide-react";
-import { registerStudent } from "@/actions/register"; 
+import { registerStudent } from "@/actions/addStudents"; 
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -123,8 +122,8 @@ export default function RegisterPage() {
           <span className="text-3xl font-black tracking-tight">CMRIT HSG</span>
           <span className="text-xs uppercase tracking-[0.2em] text-zinc-400 mt-1">Portal Registration</span>
           <h1 className="mt-6 text-5xl font-black tracking-tighter leading-[1.1]">
-            Join the <br />
-            Movement.
+            Fill the form <br />
+            to add the students.
           </h1>
         </div>
 
@@ -156,10 +155,10 @@ export default function RegisterPage() {
           </div>
 
           {/* Back Navigation */}
-          <Link href="/login" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-zinc-900 transition-colors mb-10 group">
+          <span onClick={() => router.back()} className="inline-flex cursor-pointer items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-zinc-900 transition-colors mb-10 group">
             <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> 
-            Back to Login
-          </Link>
+            Back to Dashboard
+          </span>
 
           {/* Form Header */}
           <div className="mb-10">
@@ -316,13 +315,13 @@ export default function RegisterPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group w-full rounded-full bg-zinc-900 px-6 py-4 text-sm font-bold text-white shadow-xl shadow-zinc-900/20 hover:bg-blue-600 hover:shadow-blue-600/30 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="group w-full cursor-pointer rounded-full bg-zinc-900 px-6 py-4 text-sm font-bold text-white shadow-xl shadow-zinc-900/20 hover:bg-blue-600 hover:shadow-blue-600/30 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <Loader2 className="animate-spin" size={20} />
                 ) : (
                   <>
-                    <span>Complete Registration</span>
+                    <span>Add the Student</span>
                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </>
                 )}

@@ -1,20 +1,5 @@
 {
   "node": {
-    "40d45789c5a5cbf226d60a132233716aac140cda76": {
-      "workers": {
-        "app/register/page": {
-          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/register.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": true,
-          "exportedName": "registerStudent",
-          "filename": "actions/register.ts"
-        }
-      },
-      "layer": {
-        "app/register/page": "action-browser"
-      },
-      "filename": "actions/register.ts",
-      "exportedName": "registerStudent"
-    },
     "00062e7e362e663558abfd197544455d3bf901fcf4": {
       "workers": {
         "app/admin/dashboard/page": {
@@ -45,20 +30,20 @@
       "filename": "actions/save-attendance.ts",
       "exportedName": "saveAttendance"
     },
-    "40f2521837fe54d875ef57ad439003898cde86291a": {
+    "40e9f352ee026623ff44ee497a1350cc325f1f39ec": {
       "workers": {
-        "app/blood-donor/page": {
-          "moduleId": "[project]/.next-internal/server/app/blood-donor/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/submit-blood-donation.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/admin/add-students/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/add-students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/addStudents.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": true,
-          "exportedName": "submitBloodDonation",
-          "filename": "actions/submit-blood-donation.ts"
+          "exportedName": "registerStudent",
+          "filename": "actions/addStudents.ts"
         }
       },
       "layer": {
-        "app/blood-donor/page": "action-browser"
+        "app/admin/add-students/page": "action-browser"
       },
-      "filename": "actions/submit-blood-donation.ts",
-      "exportedName": "submitBloodDonation"
+      "filename": "actions/addStudents.ts",
+      "exportedName": "registerStudent"
     }
   },
   "edge": {},

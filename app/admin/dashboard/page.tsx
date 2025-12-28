@@ -45,7 +45,7 @@ export default async function AdminDashboard() {
         admin={{
           email: session.user.email!,
           role: "ADMIN",
-          avatar: "/admin-avatar.png",
+          avatar: "/user.png",
         }}
       />
 

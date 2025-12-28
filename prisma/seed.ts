@@ -2,7 +2,7 @@ import prisma from "@/lib/prisma";
 import bcrypt from "bcrypt";
 
 async function main() {
-  const adminEmail = "shiva@cmrithyderabad.edu.in";
+  const adminEmail = "hindustanscoutsandguides.cmrit@gmail.com";
 
   const existingAdmin = await prisma.admin.findUnique({
     where: { email: adminEmail },

@@ -11,12 +11,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 ;
 function AdminHeader({ admin }) {
+    _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -33,12 +38,12 @@ function AdminHeader({ admin }) {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 26,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 23,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -48,7 +53,7 @@ function AdminHeader({ admin }) {
                                         children: "Admin Console"
                                     }, void 0, false, {
                                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -56,24 +61,40 @@ function AdminHeader({ admin }) {
                                         children: admin.role
                                     }, void 0, false, {
                                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                        lineNumber: 30,
+                                        lineNumber: 32,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-4",
                         children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>router.push("add-students"),
+                                className: "text-sm cursor-pointer bg-blue-500 px-8 py-3 rounded-xl font-semibold text-white",
+                                children: "Add Students"
+                            }, void 0, false, {
+                                fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-8 w-px bg-slate-200 mx-1"
+                            }, void 0, false, {
+                                fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden md:flex flex-col items-end mr-2",
                                 children: [
@@ -82,7 +103,7 @@ function AdminHeader({ admin }) {
                                         children: admin.email
                                     }, void 0, false, {
                                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 47,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -92,20 +113,20 @@ function AdminHeader({ admin }) {
                                                 className: "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                                lineNumber: 43,
+                                                lineNumber: 51,
                                                 columnNumber: 17
                                             }, this),
                                             "System Active"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                        lineNumber: 42,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 38,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -117,19 +138,19 @@ function AdminHeader({ admin }) {
                                     className: "object-cover rounded-full"
                                 }, void 0, false, {
                                     fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 57,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 48,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "h-8 w-px bg-slate-200 mx-1"
                             }, void 0, false, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 57,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -142,37 +163,42 @@ function AdminHeader({ admin }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 73,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                                lineNumber: 60,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                        lineNumber: 37,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-            lineNumber: 18,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/admin-dashboard/AdminHeader.tsx",
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
+_s(AdminHeader, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = AdminHeader;
 var _c;
 __turbopack_context__.k.register(_c, "AdminHeader");

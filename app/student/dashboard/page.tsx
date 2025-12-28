@@ -37,7 +37,7 @@ export default async function StudentDashboard() {
           fullName: student.fullName,
           rollNumber: student.username,
           email: student.email,
-          avatar: "/avatar.png",
+          avatar: "/user.png",
         }}
       />
 

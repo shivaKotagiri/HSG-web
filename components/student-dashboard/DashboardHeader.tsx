@@ -54,24 +54,24 @@ export default function DashboardHeader({ identity }: HeaderProps) {
           {/* RIGHT: Actions */}
           <div className="flex items-center gap-3">
             {/* Notifications (future use) */}
-            <button
+            {/* <button
               type="button"
               aria-label="Notifications"
               className="relative p-2.5 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all duration-200"
             >
               <Bell className="w-5 h-5" />
               <span className="absolute top-2.5 right-3 h-2 w-2 rounded-full bg-rose-500 ring-2 ring-white"></span>
-            </button>
+            </button> */}
 
-            {/* Settings */}
-            <Link
+            {/* /* Settings */ }
+            {/* <Link
               href="/student/settings"
               className="p-2.5 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all duration-200"
             >
               <Settings className="w-5 h-5" />
             </Link>
 
-            <div className="h-6 w-px bg-gray-200 mx-2"></div>
+            <div className="h-6 w-px bg-gray-200 mx-2"></div> */}
 
             {/* Logout */}
             <button

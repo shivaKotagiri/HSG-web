@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40e9f352ee026623ff44ee497a1350cc325f1f39ec": {
+      "workers": {
+        "app/admin/add-students/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/add-students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/addStudents.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "registerStudent",
+          "filename": "actions/addStudents.ts"
+        }
+      },
+      "layer": {
+        "app/admin/add-students/page": "action-browser"
+      },
+      "exportedName": "registerStudent",
+      "filename": "actions/addStudents.ts"
+    }
+  },
+  "edge": {}
+}

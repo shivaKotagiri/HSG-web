@@ -3,6 +3,7 @@
 import { LogOut, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 interface AdminHeaderProps {
   admin: {
@@ -13,6 +14,7 @@ interface AdminHeaderProps {
 }
 
 export default function AdminHeader({ admin }: AdminHeaderProps) {
+  const router = useRouter();
   return (
     <header className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,6 +37,12 @@ export default function AdminHeader({ admin }: AdminHeaderProps) {
 
           {/* RIGHT: Actions */}
           <div className="flex items-center gap-4">
+            <button onClick={() => router.push("add-students")} className="text-sm cursor-pointer bg-blue-500 px-8 py-3 rounded-xl font-semibold text-white">
+              Add Students
+            </button>
+
+            <div className="h-8 w-px bg-slate-200 mx-1" />
+
             <div className="hidden md:flex flex-col items-end mr-2">
               <span className="text-sm font-semibold text-slate-900">
                 {admin.email}
