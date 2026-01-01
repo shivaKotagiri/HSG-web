@@ -1765,14 +1765,6 @@
     background-color: var(--color-blue-50);
   }
 
-  .bg-blue-200 {
-    background-color: var(--color-blue-200);
-  }
-
-  .bg-blue-300 {
-    background-color: var(--color-blue-300);
-  }
-
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -2697,10 +2689,6 @@
 
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
-  }
-
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
   }
 
   .py-0\.5 {
