@@ -19,8 +19,6 @@ export default function AdminHeader({ admin }: AdminHeaderProps) {
     <header className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-
-          {/* LEFT: Admin Identity */}
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-600 text-white shadow-lg shadow-indigo-200">
               <ShieldCheck className="w-6 h-6" />
@@ -34,8 +32,6 @@ export default function AdminHeader({ admin }: AdminHeaderProps) {
               </p>
             </div>
           </div>
-
-          {/* RIGHT: Actions */}
           <div className="flex items-center gap-4">
             <button onClick={() => router.push("add-students")} className="text-sm cursor-pointer bg-blue-500 px-8 py-3 rounded-xl font-semibold text-white">
               Add Students
