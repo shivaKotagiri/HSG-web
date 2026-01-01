@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
 import { withAuth } from "next-auth/middleware";
 import { getToken } from "next-auth/jwt";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-async function publicRouteMiddleware(req: NextRequest) {
+
+async function publicRouteProxy(req: NextRequest) {
   const token = await getToken({ req });
   const path = req.nextUrl.pathname;
 
@@ -19,8 +22,8 @@ async function publicRouteMiddleware(req: NextRequest) {
   return NextResponse.next();
 }
 
-const privateRouteMiddleware = withAuth(
-  function middleware(req) {
+const privateRouteProxy = withAuth(
+  function proxy(req) {
     const role = req.nextauth.token?.role;
     const path = req.nextUrl.pathname;
 
@@ -39,16 +42,16 @@ const privateRouteMiddleware = withAuth(
   }
 );
 
-export default async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
 
   if (path === "/" || path === "/login" || path === "/register") {
-    return publicRouteMiddleware(req);
+    return publicRouteProxy(req);
   }
 
   if (path.startsWith("/student") || path.startsWith("/admin")) {
-    // @ts-expect-error – NextAuth middleware typing limitation
-    return privateRouteMiddleware(req);
+    // @ts-expect-error
+    return privateRouteProxy(req);
   }
 
   return NextResponse.next();

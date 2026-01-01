@@ -14,11 +14,11 @@ module.exports = mod;
 "[project]/middleware.ts [middleware-edge] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
+/* eslint-disable @typescript-eslint/ban-ts-comment */ __turbopack_context__.s([
     "config",
     ()=>config,
     "default",
-    ()=>middleware
+    ()=>proxy
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/middleware.js [middleware-edge] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$jwt$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/jwt/index.js [middleware-edge] (ecmascript)");
@@ -27,7 +27,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-async function publicRouteMiddleware(req) {
+async function publicRouteProxy(req) {
     const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$jwt$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["getToken"])({
         req
     });
@@ -41,7 +41,7 @@ async function publicRouteMiddleware(req) {
     }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].next();
 }
-const privateRouteMiddleware = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["withAuth"])(function middleware(req) {
+const privateRouteProxy = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["withAuth"])(function proxy(req) {
     const role = req.nextauth.token?.role;
     const path = req.nextUrl.pathname;
     if (path.startsWith("/student") && role !== "student") {
@@ -55,14 +55,14 @@ const privateRouteMiddleware = (0, __TURBOPACK__imported__module__$5b$project$5d
         authorized: ({ token })=>!!token
     }
 });
-async function middleware(req) {
+async function proxy(req) {
     const path = req.nextUrl.pathname;
     if (path === "/" || path === "/login" || path === "/register") {
-        return publicRouteMiddleware(req);
+        return publicRouteProxy(req);
     }
     if (path.startsWith("/student") || path.startsWith("/admin")) {
-        // @ts-expect-error – NextAuth middleware typing limitation
-        return privateRouteMiddleware(req);
+        // @ts-expect-error
+        return privateRouteProxy(req);
     }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].next();
 }

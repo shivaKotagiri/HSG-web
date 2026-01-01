@@ -15,3 +15,6260 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:03:09.763] Browser WARN    Image with src "https://res.cloudinary.com/dq2suftps/image/upload/v1722516854/logo_bivaq2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [00:03:34.268] Browser WARN    Image with src "/user.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:17.406] Server  LOG      ✓ Compiled in 31ms
+[00:29:07.393] Server  LOG      ✓ Compiled in 22ms
+[00:31:44.685] Server  LOG      ✓ Compiled in 26ms
+[00:31:50.661] Server  LOG      ✓ Compiled in 26ms
+[00:31:54.122] Server  LOG      ✓ Compiled in 23ms
+[00:36:29.252] Server  LOG      ✓ Compiled in 23ms
+[00:36:31.627] Server  LOG      ✓ Compiled in 24ms
+[00:36:33.268] Server  LOG      ✓ Compiled in 15ms
+[00:36:36.256] Server  LOG      ✓ Compiled in 24ms
+[00:36:38.627] Server  LOG      ✓ Compiled in 15ms
+[00:36:47.261] Server  LOG      ✓ Compiled in 15ms
+[00:36:49.841] Server  LOG      ✓ Compiled in 22ms
+[00:36:53.499] Server  LOG      ✓ Compiled in 15ms
+[00:36:59.548] Server  LOG      ✓ Compiled in 22ms
+[00:37:10.347] Server  LOG      ✓ Compiled in 176ms
+[00:38:52.872] Server  LOG      ✓ Compiled in 19ms
+[00:39:27.827] Server  LOG      ✓ Compiled in 23ms
+[00:39:53.402] Server  LOG      ✓ Compiled in 22ms
+[00:40:32.901] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.902] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.902] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.903] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.909] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.910] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.910] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.910] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.911] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.911] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.911] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:32.911] Server  ERROR    ⨯ ./lib/prisma.ts:1:1
+Module not found: Can't resolve '@prisma/client/edge'
+> 1 | import PrismaClient  from "@prisma/client/edge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | import { PrismaPg } from "@prisma/adapter-pg";
+  4 |
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.224] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.224] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.229] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.230] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.232] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:45.232] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.841] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.841] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.844] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.845] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.845] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:40:51.845] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.319] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.319] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.320] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.320] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.320] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:52.321] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.446] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.446] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.447] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.447] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.448] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.448] Server  ERROR    ⨯ ./lib/prisma.ts:3:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient  from "@prisma/client/edge";
+  2 |
+> 3 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+  6 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:42:53.478] Server  LOG      ✓ Compiled in 14ms
+[00:43:41.845] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:41.846] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:41.847] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:41.847] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:41.847] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:41.848] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.729] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.730] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.730] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.731] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.731] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:43.731] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import PrismaClient from "@prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.959] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.960] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.961] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.961] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.961] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:45.962] Server  ERROR    ⨯ ./lib/prisma.ts:1:44
+Module not found: Can't resolve '@prisma/adapter-pg'
+> 1 | import { PrismaClient  from "@prisma/client";
+    |                                            ^^
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.404] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.405] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.415] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.416] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.416] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:47.416] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.904] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.907] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.949] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.949] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.951] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.953] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.957] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.964] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.968] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.975] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.984] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.991] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:56.996] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.000] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.005] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.008] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.012] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.015] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.018] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.022] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.025] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.027] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.032] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.035] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.036] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.037] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.038] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.038] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.039] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.040] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.043] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.045] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.047] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.049] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.051] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.053] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.055] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.056] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.058] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.060] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.061] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.063] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.064] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.065] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.067] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.069] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.071] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.073] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.073] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.073] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.074] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.074] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.075] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.075] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.077] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.079] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.081] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.082] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.084] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.086] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.087] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.089] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.091] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.092] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.093] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.095] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.096] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.097] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.099] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.100] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.102] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.103] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.104] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:57.104] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.162] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.162] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.163] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.163] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.165] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.168] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.170] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.172] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.175] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.177] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.179] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.181] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.182] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.184] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.186] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.188] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.189] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.191] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.193] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.194] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.196] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.198] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.198] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.198] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.202] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.202] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.203] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.203] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.205] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.206] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.208] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.210] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.211] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.213] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.214] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.216] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.218] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.219] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.221] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.222] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.223] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.225] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.226] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.228] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.229] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.230] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.231] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.231] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.232] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.232] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.232] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.233] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.234] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.236] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.237] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.239] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.240] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.241] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.243] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.244] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.246] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.247] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.248] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.250] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.251] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.253] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.254] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.255] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.256] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.258] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.258] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:48.258] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.612] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.613] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.613] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.614] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.618] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.620] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.622] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.624] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.627] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.629] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.631] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.633] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.635] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.637] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.639] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.640] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.642] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.644] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.646] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.648] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.649] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.651] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.651] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.652] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.653] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.653] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import traces:
+  #1 [Server Component]:
+    ./lib/prisma.ts
+    ./actions/save-attendance.ts
+
+  #2 [Server Component]:
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.653] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.654] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.655] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.657] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.658] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.660] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.661] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.663] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.664] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.666] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.667] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.669] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.671] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.672] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.673] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.675] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.676] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.677] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.679] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.680] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.681] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.681] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.682] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.682] Server  ERROR    ⨯ ./lib/prisma.ts:2:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+  1 | import { PrismaClient } from "@/app/generated/prisma/client";
+> 2 | import { PrismaPg } from "@prisma/adapter-pg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | if (!process.env.DATABASE_URL) {
+  5 |   throw new Error("DATABASE_URL is not set");
+
+
+
+Import trace:
+  Server Component:
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.682] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.683] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:14:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  12 |  */
+  13 |
+> 14 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 | import type * as Prisma from "./prismaNamespace"
+  16 |
+  17 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.684] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.685] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.687] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.688] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.690] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.691] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.693] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.694] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.695] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.697] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.698] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.699] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.700] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.702] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.703] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.705] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.706] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.708] Server  ERROR    ⨯ ./app/generated/prisma/internal/prismaNamespace.ts:18:1
+Module not found: Can't resolve '@prisma/client/runtime/client'
+  16 |  */
+  17 |
+> 18 | import * as runtime from "@prisma/client/runtime/client"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 | import type * as Prisma from "../models"
+  20 | import { type PrismaClient } from "./class"
+  21 |
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/prismaNamespace.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.708] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.708] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:52.710] Server  LOG      ✓ Compiled in 25ms
+[00:45:13.777] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.778] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./actions/addStudents.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.784] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.785] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./lib/authOptions.ts
+    ./app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.791] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:40:33
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.mjs'
+  38 |
+  39 | config.compilerWasm = {
+> 40 |   getRuntime: async () => await import("@prisma/client/runtime/query_compiler_bg.postgresql.mjs"),
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+  43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.792] Server  ERROR    ⨯ ./app/generated/prisma/internal/class.ts:43:28
+Module not found: Can't resolve '@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs'
+  41 |
+  42 |   getQueryCompilerWasmModule: async () => {
+> 43 |     const { wasm } = await import("@prisma/client/runtime/query_compiler_bg.postgresql.wasm-base64.mjs")
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |     return await decodeBase64AsWasm(wasm)
+  45 |   }
+  46 | }
+
+
+
+Import trace:
+  Server Component:
+    ./app/generated/prisma/internal/class.ts
+    ./app/generated/prisma/client.ts
+    ./lib/prisma.ts
+    ./app/admin/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.935] Server  LOG      ✓ Compiled in 59ms
